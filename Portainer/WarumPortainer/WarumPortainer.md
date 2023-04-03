@@ -34,7 +34,7 @@ Dabei unterstützt Portainer nicht nur Docker als Platform sondern auch Docker S
 
 Die Anleitung kann auf der [Portainer.io](Portainer.io) Seite nachgelesen werden. In diesem Beispiel wird die Community Edition verwendet.
 
-> Vorraussetzung ist ein laufender Docker-Host
+> **Vorausgesetzt ist ein laufender Docker-Host**
 
 In der Konsole müssen Folgende Schritte befolgt werden. Keine Sorge es sind lediglich zwei Befehle die in der Konsole verwendet werden müssen.
 
