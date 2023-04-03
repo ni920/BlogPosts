@@ -16,7 +16,9 @@ Für diejenigen die direkt loslegen wollen hier der Link zum [Praktischer Teil](
 
 ## Warum dieser Eintrag? 
 
-Ich bemerke es immer wieder. Viele Leute haben Angst vor der Kommandozeile. Das ist auch nicht verwunderlich, denn die Kommandozeile ist nicht gerade einfach zu bedienen, besonders für Neulinge und Menschen, die nicht oft mit ihr in Berührung kommen. Vor allem, da es zu vielen Technologien neben einer Kommandozeile auch noch eine GUI gibt. Gerade dann, wenn befehle komplexer werden und teils über mehrere Zeilen gehen, kann schwierig werden dort den Überblick zu behalten.
+Immer wieder fällt mir auf, dass sich viele Menschen vor der Kommandozeile scheuen. Das ist auch nicht weiter verwunderlich, denn die Kommandozeile erfordert ein gewisses technisches Verständnis und kann insbesondere für Neulinge und unerfahrene Anwender abschreckend wirken. Immerhin gibt es bei vielen Technologien neben der Kommandozeile auch eine grafische Benutzeroberfläche (GUI), die oft als intuitiver empfunden wird.
+
+Besonders bei komplexeren Befehlen, die über mehrere Zeilen gehen, kann es schwierig werden, den Überblick zu behalten und Fehler zu vermeiden. Aus diesem Grund kann eine grafische Benutzeroberfläche wie Portainer eine große Hilfe sein, um die Verwaltung von Docker-Containern zu vereinfachen und auch weniger erfahrenen Anwendern den Umgang damit zu erleichtern.
 
 Docker bietet zwar eine GUI an (Docker-Desktop) diese richtet sich aber eher an Entwickler und ist nicht für den produktiven Einsatz gedacht. Zumal Docker-Desktop auch nur auf Windows und Mac läuft. 
 
