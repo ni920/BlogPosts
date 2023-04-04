@@ -24,8 +24,8 @@ Docker bietet zwar eine GUI an (Docker-Desktop) diese richtet sich aber eher an 
 
 ## Was ist Portainer?
 
-Portainer ist eine Web-GUI für Docker welche selbst in Docker Containern läuft. 
-Dabei unterstützt Portainer nicht nur Docker als Platform sondern auch Docker Swarm und Kubernetes.
+Portainer ist eine Web-GUI für Docker, welche selbst in Docker Containern läuft. 
+Dabei unterstützt Portainer nicht nur Docker als Plattform, sondern auch Docker Swarm und Kubernetes.
 
 
 ## Praktischer Teil
@@ -36,7 +36,7 @@ Die Anleitung kann auf der [Portainer.io](Portainer.io) Seite nachgelesen werden
 
 > **Vorausgesetzt ist ein laufender Docker-Host**
 
-In der Konsole müssen Folgende Schritte befolgt werden. Keine Sorge es sind lediglich zwei Befehle die in der Konsole verwendet werden müssen.
+In der Konsole müssen folgende Schritte befolgt werden. Keine Sorge, es sind lediglich zwei Befehle, die in der Konsole verwendet werden müssen.
 
 Zuerst muss ein Volume angelegt werden.
 
@@ -58,7 +58,7 @@ Im ersten Schritt muss der Nutzer angelegt werden und ein Passwort vergeben werd
 
 ![](user.png)
 
-Danach gelangt man direkt zu Übersicht der verschiedenen Environments. Da wir in diesem Beispiel nur einen Docker Host haben wird nur dieser angezeigt.
+Danach gelangt man direkt zu Übersicht der verschiedenen Environments. Da wir in diesem Beispiel nur einen Docker Host haben, wird nur dieser angezeigt.
 
 ![](environment.png)
 
@@ -68,8 +68,8 @@ Von diesem Punkt aus gelangt man ganz einfach zu den verschiedenen Funktionen un
 ![](overview.png)
 
 
-Prinzipiell wars das so schnell hat man Portainer eingerichtet und kann nun mit der intuitiven GUI arbeiten. 
-Über die wichtigsten Features von Portainer werde ich in einem weiteren Blogpost schreiben denn neben den normalen Funktionen welche benötigt werden um Docker zu verwalten bietet Portainer noch einige weitere Features.
+Prinzipiell war es das, so schnell hat man Portainer eingerichtet und kann nun mit der intuitiven GUI arbeiten. 
+Über die wichtigsten Features von Portainer werde ich in einem weiteren Blogpost schreiben, denn neben den normalen Funktionen, welche benötigt werden, um Docker zu verwalten, bietet Portainer noch einige weitere Features.
 
 ### Ausrollen einer Anwendung
 
@@ -127,11 +127,11 @@ Unsere Wordpress Instanz sollte nun in wenigen Sekunden unter [localhost:80](htt
 
 ## Fazit
 
-Portainer ist ein mächtiges Tool welches alle Funktionen von Docker grafisch darstellt und vereinfacht. Dabei wurde die GUI ganz nach dem KISS Prinzip entwickelt und ist sehr einfach zu bedienen.
+Portainer ist ein mächtiges Tool, welches alle Funktionen von Docker grafisch darstellt und vereinfacht. Dabei wurde die GUI ganz nach dem KISS Prinzip entwickelt und ist sehr einfach zu bedienen.
 
-Dabei minimiert Portainer den Raum für Fehler und sorgt dafür das es kinderleicht wird eine Anwendung auszurollen und zu verwalten.
+Dabei minimiert Portainer den Raum für Fehler und sorgt dafür, das es kinderleicht wird, eine Anwendung auszurollen und zu verwalten.
 
-In einem weiteren Blogpost werde ich die Fünf wichtigsten Features Beispielhaft vorstellen und zeigen weshalb Portainer viel mehr ist als nur eine GUI. 
+In einem weiteren Blogpost werde ich die fünf wichtigsten Features beispielhaft vorstellen und zeigen, weshalb Portainer viel mehr ist als nur eine GUI.
 
 Quellen:
 
