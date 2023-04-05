@@ -1,6 +1,6 @@
-# Warum man Portainer anstelle der Konsole nutzen sollten: Einführung und schneller Einstieg
+# Warum man Portainer anstelle der Konsole nutzen sollte: Einführung und schneller Einstieg
 
-- [Warum man Portainer anstelle der Konsole nutzen sollten: Einführung und schneller Einstieg](#warum-man-portainer-anstelle-der-konsole-nutzen-sollten-einführung-und-schneller-einstieg)
+- [Warum man Portainer anstelle der Konsole nutzen sollte: Einführung und schneller Einstieg](#warum-man-portainer-anstelle-der-konsole-nutzen-sollte-einführung-und-schneller-einstieg)
   - [Warum dieser Eintrag?](#warum-dieser-eintrag)
   - [Was ist Portainer?](#was-ist-portainer)
   - [Praktischer Teil](#praktischer-teil)
@@ -16,11 +16,11 @@ Für diejenigen die direkt loslegen wollen hier der Link zum [Praktischer Teil](
 
 ## Warum dieser Eintrag? 
 
-Immer wieder fällt mir auf, dass sich viele Menschen vor der Kommandozeile scheuen. Das ist auch nicht weiter verwunderlich, denn die Kommandozeile erfordert ein gewisses technisches Verständnis und kann insbesondere für Neulinge und unerfahrene Anwender abschreckend wirken. Immerhin gibt es bei vielen Technologien neben der Kommandozeile auch eine grafische Benutzeroberfläche (GUI), die oft als intuitiver empfunden wird.
+Immer wieder fällt mir auf, dass sich viele Menschen vor der Kommandozeile scheuen. Das ist auch nicht besonders verwunderlich, denn die Kommandozeile erfordert ein gewisses technisches Verständnis und kann insbesondere für Neulinge und unerfahrene Anwender abschreckend wirken. Immerhin gibt es bei vielen Technologien neben der Kommandozeile auch eine grafische Benutzeroberfläche (GUI), die oft als intuitiver empfunden wird.
 
 Besonders bei komplexeren Befehlen, die über mehrere Zeilen gehen, kann es schwierig werden, den Überblick zu behalten und Fehler zu vermeiden. Aus diesem Grund kann eine grafische Benutzeroberfläche wie Portainer eine große Hilfe sein, um die Verwaltung von Docker-Containern zu vereinfachen und auch weniger erfahrenen Anwendern den Umgang damit zu erleichtern.
 
-Docker bietet zwar eine GUI an (Docker-Desktop) diese richtet sich aber eher an Entwickler und ist nicht für den produktiven Einsatz gedacht. Zumal Docker-Desktop auch nur auf Windows und Mac läuft. 
+Docker bietet zwar eine GUI an (Docker-Desktop), diese richtet sich aber eher an Entwickler und ist nicht für den produktiven Einsatz gedacht. Zumal Docker-Desktop auch nur auf Windows und Mac läuft. 
 
 ## Was ist Portainer?
 
@@ -58,18 +58,18 @@ Im ersten Schritt muss der Nutzer angelegt werden und ein Passwort vergeben werd
 
 ![](user.png)
 
-Danach gelangt man direkt zu Übersicht der verschiedenen Environments. Da wir in diesem Beispiel nur einen Docker Host haben, wird nur dieser angezeigt.
+Anschließend gelangt man direkt zu Übersicht der verschiedenen Environments. Da wir in diesem Beispiel nur einen Docker Host haben, wird nur dieser angezeigt.
 
 ![](environment.png)
 
 Nach einem Klick auf das Environment gelangt man zur Übersicht. 
-Von diesem Punkt aus gelangt man ganz einfach zu den verschiedenen Funktionen und Übersichten. 
+Von diesem Punkt aus kommt man ganz einfach zu den verschiedenen Funktionen und Übersichten. 
 
 ![](overview.png)
 
 
-Prinzipiell war es das, so schnell hat man Portainer eingerichtet und kann nun mit der intuitiven GUI arbeiten. 
-Über die wichtigsten Features von Portainer werde ich in einem weiteren Blogpost schreiben, denn neben den normalen Funktionen, welche benötigt werden, um Docker zu verwalten, bietet Portainer noch einige weitere Features.
+Prinzipiell war es das. So schnell hat man Portainer eingerichtet und kann nun mit der intuitiven GUI arbeiten. 
+Über die wichtigsten Features von Portainer werde ich in einem weiteren Blogpost schreiben. Neben den normalen Funktionen, welche benötigt werden, um Docker zu verwalten, bietet Portainer nämlich noch einige weitere Features.
 
 ### Ausrollen einer Anwendung
 
@@ -82,10 +82,10 @@ Hierfür klicken wir im Portainer Dashboard auf `Stacks` und danach auf `Add Sta
 
 ![](addStack.png)
 
-Nun gibt es mehrer möglichkeiten einen Stack auszurollen. 
-Die einfachste Möglichkeit ist den integrierten Web Editor zu verwenden. Hierfür klicken wir auf `Web Editor`.
+Nun gibt es mehrere Möglichkeiten einen Stack auszurollen. 
+Die einfachste Variante ist den integrierten Web Editor zu verwenden. Hierfür klicken wir auf `Web Editor`.
 
-Nun kann ein name für den Stack vergeben werden und der Inhalt der Docker Compose Datei eingefügt werden.
+Nun kann ein Name für den Stack vergeben werden und der Inhalt der Docker Compose Datei eingefügt werden.
 
 ```yaml
 services:
@@ -129,7 +129,7 @@ Unsere Wordpress Instanz sollte nun in wenigen Sekunden unter [localhost:80](htt
 
 Portainer ist ein mächtiges Tool, welches alle Funktionen von Docker grafisch darstellt und vereinfacht. Dabei wurde die GUI ganz nach dem KISS Prinzip entwickelt und ist sehr einfach zu bedienen.
 
-Dabei minimiert Portainer den Raum für Fehler und sorgt dafür, das es kinderleicht wird, eine Anwendung auszurollen und zu verwalten.
+Portainer minimiert den Raum für Fehler und sorgt dafür, das es kinderleicht wird, eine Anwendung auszurollen und zu verwalten.
 
 In einem weiteren Blogpost werde ich die fünf wichtigsten Features beispielhaft vorstellen und zeigen, weshalb Portainer viel mehr ist als nur eine GUI.
 
