@@ -12,11 +12,9 @@ Wie bereits im [ersten Blogpost](https://www.ayedo.de/posts/warum-man-portainer-
 
 ![](Thumbnail.png)
 
-
 In diesem Blogpost möchte ich fünf dieser Features vorstellen.
 
 Bei den Features handelt es sich nicht unbedingt um die wichtigsten Features, sondern um die Features, welche ich am interessantesten finde.
-
 
 
 ## 1. Docker Environments
@@ -36,7 +34,6 @@ Hierdurch kann beispielsweise Abteilung A ein Environment besitzen und Abteilung
 Entwicklern kann somit extrem geholfen werden sich zurecht zu finden und die Übersicht zu behalten.
 
 ![](Environments.png)
-
 
 
 ## 2. Zugriffskontrolle
