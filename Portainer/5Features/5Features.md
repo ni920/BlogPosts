@@ -78,7 +78,7 @@ Dabei stehen folgende Rollen zur Verfügung:
 | Helpdesk                  | Read-only access of all resources in an environment      |
 | Standard user             | Full control of assigned resources in an environment     |
 | Read-only user            | Read-only access of assigned resources in an environment |
-|                           |                                                          |
+
 
 Natürlich können noch mehr feingranularere Rechte vergeben werden, aber für die meisten Anwendungsfälle reichen die bis hierhin gezeigten Einstellungsmöglichkeiten aus um die Zugriffskontrolle zu verwalten.
 
@@ -118,3 +118,4 @@ Das Problem dabei ist nur, dass Kubernetes nicht gerade einfach zu bedienen ist 
 
 Der große Vorteil von Portainer an dieser Stelle ist das es mit einem wachsen kann. Das heißt ich kann mit Docker Standalone anfangen um meine Container zu verwalten kann dann vielleicht auf Docker Swarm umsteigen um nun mit Rolling Updates meine Services zu verwalten und wenn ich dann Kubernetes benötige kann ich auch dieses mit Portainer verwalten. 
 
+Dies ist aus meiner Sicht ein riesen Mehrwert da ich mich als unternehmen nicht auf eine Technologie festlegen muss, sondern mit Portainer die Möglichkeit habe mitzuwachsen.
