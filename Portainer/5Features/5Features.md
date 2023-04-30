@@ -8,7 +8,7 @@
   - [5. Kubernetes](#5-kubernetes)
 
 
-Wie bereits im [ersten Blogpost](https://www.ayedo.de/posts/warum-man-portainer-portainer-ansteller-der-konsole-nutzen-sollte/) erwähnt, ist Portainer ein mächtiges Tool, welches alle Funktionen von Docker grafisch darstellt und vereinfacht. Dabei bietet Portainer über die von Docker bekannten Funktionen hinaus, noch einige weitere Features, welche die Verwaltung von Docker Containern noch einfacher machen.
+Wie bereits im [vorherigen Blogpost](https://www.ayedo.de/posts/warum-man-portainer-portainer-ansteller-der-konsole-nutzen-sollte/) erwähnt, ist Portainer ein mächtiges Tool, das alle Funktionen von Docker grafisch darstellt und vereinfacht. Dabei bietet Portainer über die von Docker bekannten Funktionen hinaus, noch einige weitere Features, welche die Verwaltung von Docker Containern noch einfacher machen.
 
 ![](Thumbnail.png)
 
@@ -44,19 +44,19 @@ Dabei können Nutzer und Teams angelegt werden, denen dann Rechte zugewiesen wer
 
 ![](team.png)
 
-In diesem Beispiel wurde ein Team Development angelegt, die Rechte, welches das Team besitzt, werden an einer anderen Stelle Zugwiesen.
+In diesem Beispiel wurde ein Team Development angelegt, die Rechte, welches das Team besitzt, werden an einer anderen Stelle zugewiesen.
 
 ![](newUser.png)
 
-Im 2. Schritt wird ein neuer Nutzer angelegt, welcher dem Team Development zugewiesen wird.
+Im 2. Schritt wird ein neuer Nutzer angelegt, welcher dem Team Development zugeordnet wird.
 
 ![](teamDetails.png)
-Schaut man sich nun die Teamdetails an, kann man sehen, welche User bereits dem Team zugewiesen wurden. Und welche User noch hinzugefügt werden können. Rechts sieht man den eben erstellten `testuser`, welcher dem Team `development` zugewiesen wurde. Links zu sehen ist der `testuser2`, welcher noch nicht dem Team zugewiesen wurde.
+Schaut man sich nun die Teamdetails an, kann man sehen, welche User bereits dem Team zugewiesen wurden und welche User noch hinzugefügt werden können. Rechts sieht man den eben erstellten `testuser`, welcher dem Team `development` zugeordnet wurde. Links zu sehen ist der `testuser2`, welcher noch nicht dem Team zugewiesen wurde.
 
-Nun haben wir zwar Nutzer und Teams angelegt, aber noch keine Rechte zugewiesen. Dies geschieht im nächsten Schritt.
+Nun haben wir zwar Nutzer und Teams angelegt, aber noch keine Rechte zugeordnet. Dies geschieht im nächsten Schritt.
 
 Dies kann für jedes Environment vorgenommen werden. 
-Schauen wir uns das ganze an unserem Beispiel an. 
+Schauen wir uns das Ganze an unserem Beispiel an. 
 
 ![](manageAccess.png)
 
@@ -81,7 +81,7 @@ Natürlich können noch mehr feingranularere Rechte vergeben werden, aber für d
 
 ## 3. CI/CD Möglichkeiten
 
-Beim anlegen eines Stacks bietet Portainer die Möglichkeit, die Stacks automatisch zu aktualisieren, wenn es beispielsweise eine neuere Version eines Images gibt.
+Beim Anlegen eines Stacks bietet Portainer die Möglichkeit, die Stacks automatisch zu aktualisieren, wenn es beispielsweise eine neuere Version eines Images gibt.
 
 Ist das Image als `latest` getagged, wird das Image automatisch aktualisiert, wenn eine neue Version verfügbar ist.
 
@@ -94,7 +94,7 @@ Sollte es eine neuere Version geben, wird diese automatisch ausgerollt.
 
 ## 4. Monitoring
 
-Neben den bisher genannten Features bietet Portainer auch basic Monitoring Funktionen zum überwachen der Docker Container.
+Neben den bisher genannten Features bietet Portainer auch basic Monitoring Funktionen zum Überwachen der Docker Container.
 
 ![](Monitoring.png)
 
