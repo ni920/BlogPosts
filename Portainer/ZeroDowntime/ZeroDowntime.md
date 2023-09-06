@@ -12,9 +12,9 @@
 
 ## Was sind Zero-downtime deployments?
 
-Bevor wir ans eingemachte gehen klären wir einmal die Frage was denn Zero-downtime deployments sind. Zero-downtime deployments sind Deployments die keine Ausfallzeit haben. Das bedeutet das die Anwendung die gerade deployed wird nicht offline ist. Das ist besonders wichtig bei Anwendungen die 24/7 laufen müssen.
+Bevor wir ans Eingemachte gehen, klären wir einmal die Frage, was denn Zero-downtime deployments sind. Zero-downtime deployments sind Deployments, die keine Ausfallzeit haben. Das bedeutet das die Anwendung, die gerade deployed wird, nicht offline ist. Das ist besonders wichtig bei Anwendungen, die 24/7 laufen müssen.
 Die hohe Verfügbarkeit von Anwendungen rückt immer mehr in den Fokus.
-Ich mein wer will schon warten müssen wenn Netflix und co. ihre Anwendungen updaten.
+Ich mein, wer will schon warten müssen, wenn Netflix und Co. ihre Anwendungen updaten.
 
  
 
@@ -55,9 +55,9 @@ Folgende Dinge werden Vorausgesetzt:
 - Repository indem das Projekt liegt mit einer Stack Yaml Datei
 - Portainer
 
-Da ich bereits in dem Artikel [Warum Portainer](https://www.ayedo.de/posts/warum-man-portainer-portainer-ansteller-der-konsole-nutzen-sollte/) gezeigt habe wie man eine Basic YAML Datei über Portainer ausrollt gehe ich hier nicht weiter darauf ein.
+Da ich bereits in dem Artikel [Warum Portainer](https://www.ayedo.de/posts/warum-man-portainer-portainer-ansteller-der-konsole-nutzen-sollte/) gezeigt habe, wie man eine Basic YAML Datei über Portainer ausrollt, gehe ich hier nicht weiter darauf ein.
 
-Der Fokus liegt viel eher auf den Befehlen die mir Docker Anbietet um ein Zero-downtime deployment zu erreichen. 
+Der Fokus liegt viel eher auf den Befehlen, die mir Docker anbietet um ein Zero-downtime deployment zu erreichen. 
 In Teil 2 liegt der Fokus eher auf der Verbindung zwischen Portainer und dem Repository.
 
 Fangen wir an mit der YAML Datei. Diese sieht wie folgt aus:
@@ -96,13 +96,13 @@ volumes:
   wp_data:
 ```
 
-Soweit nichts besonderes. Wir haben eine Wordpress Instanz mit einer Datenbank.
-Wenn aktuell eine neue Version von Wordpress rauskommt muss  die Anwendung offline gehen um die neue Version auszurollen. Dies ist natürlich nicht optimal.
+So weit nichts besonderes. Wir haben eine WordPress-Instanz mit einer Datenbank.
+Wenn aktuell eine neue Version von WordPress rauskommt, muss die Anwendung offline gehen, um die neue Version auszurollen. Dies ist natürlich nicht optimal.
 
 ### Healthcheck
 
-Der nächste Schritt ist deshalb einen Docker Healthcheck zu integrieren der überprüft ob eine Anwendung richtig läuft. 
-Es würde prinzipiell auch funktionieren ohne einen Healthcheck, jedoch gibt container die selbst dann als laufend angezeigt werden wenn sie intern nicht mehr laufen.
+Der nächste Schritt ist deshalb, einen Docker Healthcheck zu integrieren, der überprüft, ob eine Anwendung richtig läuft. 
+Es würde prinzipiell auch funktionieren ohne einen Healthcheck, jedoch gibt es Container, die selbst dann als laufend angezeigt werden, wenn sie intern nicht mehr laufen.
 
 ```yaml
 healthcheck:
@@ -112,17 +112,17 @@ healthcheck:
       retries: 5
 ```
 
-Hiernach können wir in Portainer überprüfen ob unsere Anwendung ```healthy``` ist.
+Hiernach können wir in Portainer überprüfen, ob unsere Anwendung ```healthy``` ist.
 
 ![](ServiceHealthy.png)
 
-Das sieht schonmal sehr gut aus.
+Das sieht schon mal sehr gut aus.
 
-Ich gehe hier nicht weiter auf den Healthcheck ein. Wer mehr darüber wissen will kann sich gerne die [Docker Manuals](https://docs.docker.com/compose/compose-file/05-services/#healthcheck) durchlesen.
+Ich gehe hier nicht weiter auf den Healthcheck ein. Wer mehr darüber wissen will, kann sich gerne die [Docker Manuals](https://docs.docker.com/compose/compose-file/05-services/#healthcheck) durchlesen.
 
 ###  Zero-downtime deployment
 
-Nun da wir den Healthcheck haben können wir uns dem eigentlichen Zero-downtime deployment widmen.
+Nun, da wir den Healthcheck haben, können wir uns dem eigentlichen Zero-downtime deployment widmen.
 Hierfür müssen wir unsere YAML Datei um ein paar Zeilen erweitern.
 
 ```yaml
@@ -140,18 +140,18 @@ deploy:
     condition: on-failure # Unter welchen Bedingungen soll ein Restart durchgeführt werden
 ```
 
-Nun haben wir alles was wir brauchen um ein Zero-downtime deployment durchzuführen.
+Nun haben wir alles, was wir brauchen, um ein Zero-downtime deployment durchzuführen.
 Den kompletten Stack findet ihr [hier](https://github.com/ni920/BlogExamples/blob/main/docker-compose.yml)
 
 >Warum wir zwei Instanzen gleichzeitig laufen lassen? 
 >
->Ganz einfach. Wenn wir nur eine Instanz laufen lassen und diese Instanz fehlschlägt haben wir keine Instanz mehr die die Anwendung bereitstellt. Deswegen lassen wir zwei Instanzen gleichzeitig laufen. Sollte eine Instanz fehlschlagen haben wir immer noch eine zweite Instanz die die Anwendung bereitstellt.
->In einem Swarm Cluster kann Docker so auch die Container über mehrere Nodes verteilen.
+>Ganz einfach. Wenn wir nur eine Instanz laufen lassen und diese Instanz fehlschlägt, haben wir keine Instanz mehr, die die Anwendung bereitstellt. Deswegen lassen wir zwei Instanzen gleichzeitig laufen. Sollte eine Instanz fehlschlagen, haben wir immer noch eine zweite Instanz, die die Anwendung bereitstellt.
+>In einem Swarm-Cluster kann Docker so auch die Container über mehrere Nodes verteilen.
 >
 >Dadurch können wir eine hohe Verfügbarkeit der Anwendung erreichen.
 
 
-Sollten wir nun unsere WordPress Instanz updaten wollen können wir dies ganz einfach über Portainer machen. 
+Sollten wir nun unsere WordPress-Instanz updaten wollen, können wir dies ganz einfach über Portainer machen. 
 Dies werde ich euch aber in Teil 2 dieses Beitrags zeigen, da es hier den Rahmen sprengen würde.
 
 
