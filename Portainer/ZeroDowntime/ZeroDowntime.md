@@ -158,6 +158,6 @@ Dies werde ich euch aber in Teil 2 dieses Beitrags zeigen, da es hier den Rahmen
 
 Quellen:
 * [Portainer.io](https://www.portainer.io/)
-* [Anfangsbild (wurde stark bearbeitet)](https://unsplash.com/de/fotos/XbxothjMRL0)
+* [Thumbnail (wurde stark bearbeitet)](https://unsplash.com/de/fotos/XbxothjMRL0)
 * [Wordpress Compose](https://github.com/docker/awesome-compose/blob/master/official-documentation-samples/wordpress/README.md)
 
