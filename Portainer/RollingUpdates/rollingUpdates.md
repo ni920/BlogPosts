@@ -30,7 +30,7 @@ Deswegen schauen wir uns einmal beide Ansätze anhand einer Tabelle an.
 | Zeitliche Abstände | Die Aktualisierung erfordert eine gewisse Zeit, da sie schrittweise auf einzelnen Instanzen durchgeführt wird.                       |
 | Ausfallzeiten      | Kurzzeitige Ausfallzeiten sind möglich, da bei jedem Schritt eine einzelne Instanz gestoppt und durch die neue Version ersetzt wird. |
 | Versionierung      | Während der Aktualisierung können kurze Zeit verschiedene Versionen der Anwendung parallel laufen.                                   |
-|                    |                                                                                                                                      |
+
 
 
 
@@ -40,7 +40,7 @@ Deswegen schauen wir uns einmal beide Ansätze anhand einer Tabelle an.
 | Zeitliche Abstände        | Zero Downtime Deployments streben eine nahtlose Aktualisierung an, ohne dass es zu Zeitverzögerungen oder Unterbrechungen im Betrieb kommt.                                                                                              |
 | Ausfallzeiten             | Der Hauptunterschied zu Rolling Updates besteht darin, dass Zero Downtime Deployments keine Ausfallzeiten haben. Die Anwendung bleibt kontinuierlich verfügbar, auch während der Aktualisierung.                                         |
 | Versionierung             | Bei Zero Downtime Deployments werden die neuen Versionen der Anwendung schrittweise in Produktion gebracht, und erst wenn die neue Version als vollständig funktionsfähig und stabil bewertet wurde, wird die alte Version abgeschaltet. |
-|                           |                                                                                                                                                                                                                                          |
+
 
 
 
