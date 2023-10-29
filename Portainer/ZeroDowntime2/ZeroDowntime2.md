@@ -5,7 +5,7 @@
 - [Vorraussetzungen](#vorraussetzungen)
 - [Portainer Stack mit GitHub verknüpfen](#portainer-stack-mit-github-verknüpfen)
 
-![](ZeroDowntimeDeployments.webp)
+![](ZeroDowntimeDeploymentsFHD.jpg)
 
 # Was haben wir bisher erreicht?
 
